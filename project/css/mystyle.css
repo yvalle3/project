@@ -1,0 +1,14 @@
+h1{
+    text-transform: uppercase;
+    color: red;
+}
+article{
+    color: purple;
+}
+aside{
+    text-decoration: underline;
+    background: pink;
+}
+footer{
+    border: 1px solid blue;
+}
