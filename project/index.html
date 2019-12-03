@@ -2,22 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="About page and portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
     <title>HTML5 and CSS</title>
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Alatsi|Sulphur+Point|Yeseva+One&display=swap" rel="stylesheet">  
 </head>
 <body>
-    <div class="flex-container">
-        <div class="flex-item">About Me</div>
-        <div class="flex-item">Portfolio</div>
-        <div class="flex-item">Contact</div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
     </div>
+    <nav>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; * </span>
+    </nav>
 
-    <article>Article</article>
-    <aside>Aside</aside>
-    <footer>Footer</footer>
+    <div class="flex-container">
+        <div class="flex-item"><h1>Yazmin Valle</h1></div>
+        <div class="flex-item"><h2>Web and Graphic Designer</h2></div>
+        <div class="image"><img src="assets/images/alien.jpg" alt="Alien Painting" style="width:85%"></div>
+        <div class="flex-item"><h3>About Me</h3></div>
+        <div class="flex-item"><p>POTATO CARVER Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim 
+            ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate 
+            velit esse cillum dolore eu fugiat nulla pariatur. </p></div>
+        <div class="flex-item"><h4>yaazmin.4@gmail.com --- (210)461-8731</h4></div>
+    </div>
+    <div class="grid-container">
+        <div class="title"><h3>Portfolio</h3></div>
+        <div class="first"><img src="assets/images/sullivan.png" alt="Sullivan Poster" style="width:100%"></div>
+        <div class="second"><img src="assets/images/alien head.png" alt="Alien Head" style="width:100%"></div>
+        <div class="third"><img src="assets/images/eyeball.jpg" alt="Eye Painting" style="width:100%"></div>
+    </div>
+    <footer><h4>Footer</h4></footer>
     <script src="js/main.js"></script>
 </body>
 </html>
