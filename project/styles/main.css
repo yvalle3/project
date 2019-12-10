@@ -352,8 +352,12 @@ template {
   background: -webkit-gradient(linear, left bottom, left top, from(#a81eff), to(#521eff));
   background: linear-gradient(0deg, #a81eff 0%, #521eff 100%);
   overflow-x: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
   padding-top: 60px;
 }
 
@@ -400,6 +404,7 @@ body {
 }
 
 .flex-container {
+  padding-top: 40px;
   text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -407,13 +412,18 @@ body {
           flex-direction: column;
 }
 
-.image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.jello {
+  -webkit-animation: jello;
+          animation: jello;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
-* {
+@-webkit-keyframes jello {}
+
+@keyframes jello {}* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -441,8 +451,16 @@ body {
   grid-column-end: 3;
 }
 
+.fourth {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  font-family: "Alatsi", sans-serif;
+}
+
 h1 {
-  font-family: "Sulphur Point", sans-serif;
+  font-family: "Yeseva One", cursive;
   color: white;
   font-size: 50px;
 }
@@ -472,5 +490,20 @@ p {
 footer {
   color: #97f9f1;
   background-color: #521EFF;
+  margin-top: 10px;
+}
+
+.navbar {
+  background-color: #521EFF;
+}
+
+.container-fluid {
+  background: -webkit-gradient(linear, left bottom, left top, from(#a81eff), to(#521eff));
+  background: linear-gradient(0deg, #a81eff 0%, #521eff 100%);
+  padding: 10px;
+}
+
+.col {
+  margin: 3px;
 }
 /*# sourceMappingURL=main.css.map */
